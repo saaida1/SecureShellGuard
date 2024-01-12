@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# Vérifier si l'utilisateur est root
+if [ "$(id -u)" != "0" ]; then
+    echo "Sorry! This script should be run as root!"
+    exit 1
+fi
+
+# Si l'utilisateur est root, afficher des choix
+echo "Welcome, this script will help you secure your system! "
+echo "1. Hardware configuration"
+echo "2. Linux kernel configuration"
+echo "3. System configuration"
+echo "4. Authentification configuration"
+echo "5. Network configuration"
+echo "6. File System configuration"
+echo "7. Quit"
+
+# Lire le choix de l'utilisateur
+read -p "Please choose a configuration (1-5): " choice
+
+# Traiter le choix de l'utilisateur
+case $choice in
+    1)
+        echo "You chose Hardware configuration"
+        	./Hardware.sh
+        ;;
+    2)
+        echo "You chose Linux kernel configuration"
+        	./Kernel.sh
+        ;;
+    3)
+        echo "You chose system configuration"
+		./System.sh
+        ;;
+    4)    
+        echo "You chose Authentification configuration" 
+                ./Auth.sh
+        ;;
+
+   5) 
+	echo "You chose Network configuration"
+		./Network.sh
+	;;
+   6) 
+        echo "You chose File System configuration"
+                ./FS.sh
+        ;;
+   7)
+	echo "Quit!"
+	;;
+    *)
+        echo "Invalid choice. Quit!"
+        ;;
+esac
