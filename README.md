@@ -56,3 +56,15 @@ The main script that orchestrates the execution of the individual hardening scri
 
    ```bash
    git clone https://github.com/saaida1/Linux-OS-Hardening.git
+2. Change into the project directory:
+   
+   ```bash
+   cd linux-system-hardening-scripts
+   
+4. Run the main script with elevated privileges:
+   
+   ```bash
+   sudo ./script
+
+## Usage
+Each script can be executed individually or collectively through the main script. Refer to the specific script sections for more details on their usage.
