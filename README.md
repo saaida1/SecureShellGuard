@@ -59,7 +59,7 @@ The main script that orchestrates the execution of the individual hardening scri
 2. Change into the project directory:
    
    ```bash
-   cd linux-system-hardening-scripts
+   cd Linux-OS-Hardening
    
 4. Run the main script with elevated privileges:
    
