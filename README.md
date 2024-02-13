@@ -1,4 +1,4 @@
-# Linux System Hardening Scripts
+#SecureShellGuard
 
 These scripts are designed to enhance the security of various components of the Linux system, following the best practices recommended by ANSSI (Agence nationale de la sécurité des systèmes d'information).
 
