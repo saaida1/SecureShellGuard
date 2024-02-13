@@ -55,11 +55,11 @@ The main script that orchestrates the execution of the individual hardening scri
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/saaida1/Linux-OS-Hardening.git
+   git clone https://github.com/saaida1/SecureShellGuard.git
 2. Change into the project directory:
    
    ```bash
-   cd Linux-OS-Hardening
+   cd SecureShellGuard
    
 4. Run the main script with elevated privileges:
    
